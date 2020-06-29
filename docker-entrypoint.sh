@@ -7,5 +7,5 @@ if [ "$VERSION" = "HEAD" ]; then
 else
 	VERSION="$(echo $VERSION | tr '/' '-')"
 fi
-echo "Save '$VERSION' to '${PLUGIN_OUTPUT:-.version}'"
-echo -n "$VERSION" > ${PLUGIN_OUTPUT:-.version}
+echo "Save '$VERSION' to '${PLUGIN_OUTPUT_FILE:-.version}'"
+echo -n "$VERSION" > ${PLUGIN_OUTPUT_FILE:-.version}
